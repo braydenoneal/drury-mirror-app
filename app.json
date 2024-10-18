@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "drury-mirror",
-    "slug": "drury-mirror",
+    "slug": "drury-mirror-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -16,10 +16,14 @@
       "supportsTablet": true
     },
     "android": {
+      "permissions": [
+        "android.permission.INTERNET"
+      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "edu.drury.mirrorapp"
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +35,12 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a68eb543-ed9b-4e22-a2dc-ba9f9c61cda7"
+      }
+    },
+    "owner": "braydenoneal"
   }
 }
